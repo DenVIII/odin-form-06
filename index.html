@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Sign Up Now</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    Some content to test
+    <section class="bg"></section>
+    <section class="form">
+        <h1>Get Started!</h1>
+        <form action="">
+            <div class="form-row">
+                <label for="first-name">first name</label>
+                <input
+                    id="first-name"
+                    name="first-name"
+                    placeholder="Yondu" 
+                    type="text">
+                <label for="last-name">last name</label>
+                <input 
+                    id="last-name"
+                    name="last-name"
+                    placeholder="Star" 
+                    type="text">
+            </div>
+            <div class="form-row">
+                <label for="email">email</label>
+                <input
+                    id="email"
+                    name="email"
+                    placeholder="YonduStar14@mymail.com" 
+                    type="email">
+                <label for="phone">phone</label>
+                <input 
+                    id="phone"
+                    name="phone"
+                    placeholder="8(933)734-20-05" 
+                    type="tel">
+            </div>
+            <div class="form-row">
+                <label for="pwd">password</label>
+                <input
+                    id="pwd"
+                    name="pwd" 
+                    type="password">
+                <label for="pwd-confirm">confirm password</label>
+                <input
+                    id="pwd-confirm"
+                    name="pwd-confirm" 
+                    type="password">
+            </div>
+            <div class="create-account">
+                <button type="submit" value="submit">create account</button>
+                <p>Already have an account? <a href="#">Log in!</a></p>
+            </div>
+        </form>
+
+    </section>
 </body>
 </html>
