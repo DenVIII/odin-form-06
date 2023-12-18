@@ -1,3 +1,7 @@
+:root {
+    --bgcolor: #ecf3f5;
+}
+
 *, ::after, ::before {
     box-sizing: border-box;
     border-collapse: collapse;
@@ -14,11 +18,41 @@ body {
 }
 
 .image-container {
+    display: flex;
+    align-items: center;
+    box-shadow: 10px 0 10px rgb(221,58,243, 0.6);
     background: url(/img/Bg.jpg) no-repeat fixed center/100%;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(1,189,237, 0.7);
+    background: linear-gradient(rgb(221,58,243, 0.6), rgb(1,189,237, 0.6));
+    box-shadow: 0 10px 15px rgb(221,58,243, 0.6);
+}
+
+.company-name {
+    position: relative;
+    color: var(--bgcolor);
+    font-size: 2.4rem;
+}
+
+.trademark {
+    position: absolute;
+    font-size: 0.5em;
+}
+
+.logo {
+    max-width: 400px;
 }
 
 .form-section {
     padding: 100px 250px 100px 100px;
+    background-color: var(--bgcolor);
 }
 
 form {
