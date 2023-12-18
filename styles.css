@@ -1,11 +1,13 @@
 :root {
-    --bgcolor: #ecf3f5;
+    --bg-color: #ecf3f5;
+    --main-color: rgb(221,58,243, 0.6);
+    --secondary-color: rgb(1,189,237, 0.8);
 }
 
 *, ::after, ::before {
     box-sizing: border-box;
     border-collapse: collapse;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
@@ -20,8 +22,8 @@ body {
 .image-container {
     display: flex;
     align-items: center;
-    box-shadow: 10px 0 10px rgb(221,58,243, 0.6);
-    background: url(/img/Bg.jpg) no-repeat fixed center/100%;
+    box-shadow: 10px 0 10px var(--main-color);
+    background: url(/img/bg.jpg) no-repeat fixed center/100%;
 }
 
 .logo-container {
@@ -29,15 +31,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 25px 0;
     width: 100%;
     background-color: rgba(1,189,237, 0.7);
-    background: linear-gradient(rgb(221,58,243, 0.6), rgb(1,189,237, 0.6));
-    box-shadow: 0 10px 15px rgb(221,58,243, 0.6);
+    background: linear-gradient(var(--main-color), var(--secondary-color));
+    box-shadow: 0 10px 15px var(--main-color);
 }
 
 .company-name {
+    font-family: 'Bebas Neue', sans-serif;
     position: relative;
-    color: var(--bgcolor);
+    color: var(--bg-color);
     font-size: 2.4rem;
 }
 
@@ -52,7 +56,7 @@ body {
 
 .form-section {
     padding: 100px 250px 100px 100px;
-    background-color: var(--bgcolor);
+    background-color: var(--bg-color);
 }
 
 form {
@@ -65,11 +69,6 @@ form {
     display: flex;
     gap: 150px;
     margin-bottom: 50px;
-}
-
-.form-row:last-of-type {
-    background-color: red;
-    margin-bottom: 100px;
 }
 
 .form-input {
@@ -86,30 +85,45 @@ form {
 
 input {
     height: 50px;
+    border: 3px solid var(--secondary-color);
     font-size: 1.5rem;
     padding-left: 5px;
     border-radius: 5px;
     padding-top: 5px;
+    transition: 1s;
+    outline: none;
 }
 
 .create-account {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 button[value="submit"] {
     width: 300px;
     height: 75px;
-    background-color: Rgb(221,58,243);
+    background-color: rgb(221,58,243);
     font-size: 1.25rem;
-    color: white;
+    font-weight: bold;
+    color: var(--bg-color);
     border: none;
     border-radius: 10px;
     margin-bottom: 25px;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 100px;
+    font-size: 3.6rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+input:focus {
+    border: 3px solid var(--main-color);
 }
 
 input[type="text"] {
