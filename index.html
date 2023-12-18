@@ -21,7 +21,7 @@
         <form action="">
             <div class="form-row">
                 <div class="form-input">
-                    <label for="first-name">first name</label>
+                    <label for="first-name">first name<span aria-label="required">*</span></label>
                     <input
                         id="first-name"
                         name="first-name"
@@ -30,7 +30,7 @@
                         required>
                 </div>
                 <div class="form-input">
-                    <label for="last-name">last name</label>
+                    <label for="last-name">last name<span aria-label="required">*</span></label>
                     <input 
                         id="last-name"
                         name="last-name"
@@ -41,7 +41,7 @@
             </div>
             <div class="form-row">
                 <div class="form-input">
-                    <label for="email">email</label>
+                    <label for="email">email<span aria-label="required">*</span></label>
                     <input
                         id="email"
                         name="email"
@@ -60,7 +60,7 @@
             </div>
             <div class="form-row">
                 <div class="form-input">
-                    <label for="pwd">password</label>
+                    <label for="pwd">password<span aria-label="required">*</span></label>
                     <input
                         id="pwd"
                         name="pwd" 
@@ -68,7 +68,7 @@
                         required>
                 </div>
                 <div class="form-input">
-                    <label for="pwd-confirm">confirm password</label>
+                    <label for="pwd-confirm">confirm password<span aria-label="required">*</span></label>
                     <input
                         id="pwd-confirm"
                         name="pwd-confirm" 
@@ -79,6 +79,7 @@
             <div class="create-account">
                 <button type="submit" value="submit">create account</button>
                 <p>Already have an account? <a href="#">Log in!</a></p>
+                <p class="footnote">*this field is required</p>
             </div>
         </form>
 
