@@ -11,6 +11,8 @@
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 body {
@@ -90,8 +92,6 @@ input {
     padding-left: 5px;
     border-radius: 5px;
     padding-top: 5px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
     outline: none;
 }
 
@@ -111,6 +111,11 @@ button[value="submit"] {
     margin-bottom: 25px;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+}
+
 h1 {
     font-size: 3.6rem;
     font-weight: bold;
@@ -121,12 +126,31 @@ a {
     text-decoration: none;
     font-weight: bold;
     color: var(--main-color);
+    
+}
+
+a:hover {
+    color: var(--secondary-color);
 }
 
 .footnote {
     margin-top: 10px;
     font-size: 1rem;
     text-transform: none;
+}
+
+span[aria-label="required"] {
+    font-size: 1.2em;
+    color: var(--main-color);
+}
+
+button:hover ~ .footnote {
+    font-size: 1.1em;
+    color: var(--main-color);
+}
+
+input:hover {
+    border-color: var(--secondary-color);
 }
 
 input:focus {
