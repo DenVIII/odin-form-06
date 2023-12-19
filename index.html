@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <section class="image-container">
@@ -54,7 +55,7 @@
                     <input 
                         id="phone"
                         name="phone"
-                        placeholder="8(933)734-20-05" 
+                        placeholder="(555) 555-1234" 
                         type="tel">
                 </div>
             </div>
@@ -67,6 +68,7 @@
                         type="password"
                         placeholder=""
                         required>
+                    <p class="error-message hidden">Passwords didn't match!</p>
                 </div>
                 <div class="form-input">
                     <label for="pwd-confirm">confirm password<span aria-label="required">*</span></label>

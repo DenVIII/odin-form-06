@@ -169,6 +169,21 @@ input:not(:placeholder-shown):not(:focus):invalid {
     background-color: #fdd;
 }
 
-input:not(:placeholder-shown):not(:focus):valid {
+input:not(:placeholder-shown):not(:focus):not(.error):valid {
     border-color: rgb(0, 153, 64);
+}
+
+.error {
+    border-color: #900;
+    background-color: #fdd;
+}
+
+.error-message {
+    color: #900;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.hidden {
+    display: none;
 }
